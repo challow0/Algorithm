@@ -25,6 +25,7 @@ int main()
     convert(text);
     int t = 0;
     int pos = 0;
+    
     for(int i = 0;i<=lent-lenw;i++)
     {
         int j;
