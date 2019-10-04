@@ -23,6 +23,6 @@ int main()
     }
 
     cout<<q.front();
-    system("pause");
+    // system("pause");
     return 0;
 }
