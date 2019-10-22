@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-const int MAXV = 1000;
+const int MAXV = 10000;
 const int INF = 1000000000;
 
 //邻接矩阵版

@@ -1,8 +1,8 @@
 #include<cstdio>
 #include<algorithm>
 using namespace std;
-const int MAXV = 110;
-const int MAXE = 10010;
+const int MAXV = 100005;
+const int MAXE = 200005;
 struct edge
 {
     int u,v;
@@ -45,15 +45,12 @@ int kruskal(int n,int m)
         if(faU!=faV)
         {
             father[faU] = faV;
-            ans = max(ans,E[i].cost);
-            num_edge++;
-            if(num_edge==n-1) break;
+            ans=E[i].cost;
+            if(findFather(1)==findFather(n))
+            {
+                return ans;
+            }
         }
-    }
-    if(num_edge!=n-1) return -1;
-    else
-    {
-        return ans;
     }
     
 }
