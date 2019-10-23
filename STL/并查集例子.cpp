@@ -6,6 +6,7 @@
 const int N = 110;
 int father[N];
 bool isRoot[N];
+
 int findfather(int x)
 {
     int a = x;
