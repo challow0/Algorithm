@@ -28,7 +28,7 @@ int main()
 			}
 			for(size_t i = 0;i<x.size();i++)
 			{
-				tx+=tolower(str[i]);
+				tx+=tolower(x[i]);
 			}
 			int pos = temp.find(tx);
 			if(pos!=string::npos)
